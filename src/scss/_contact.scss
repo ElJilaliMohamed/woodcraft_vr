@@ -1,0 +1,28 @@
+.c-contact {
+  background-color: $color-white;
+  margin-top: -10rem;
+  &__paragraph {
+    background-color: $color-orange;
+    padding: 1.5rem;
+    color: $color-white;
+  }
+  &__map {
+  }
+  &__frame {
+    height: 250px;
+    border-radius: 0.32rem;
+    width: 640px;
+    @media (max-width: 1400px) {
+      width: 555px;
+    }
+    @media (max-width: 1200px) {
+      width: 466px;
+    }
+    @media (max-width: 992px) {
+      width: 338px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

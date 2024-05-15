@@ -1,0 +1,63 @@
+.c-summary {
+  background-color: $color-white;
+  margin-top: -2rem;
+  z-index: -1;
+  &__lesson {
+    position: relative;
+    background-color: $color-bg-beige;
+    z-index: 0;
+    &--bg {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: right;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 15rem;
+        background-image: url('../img/saw.png');
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position: right;
+        opacity: 0.5;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__title {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+  &__fontsize {
+    padding-left: 3rem;
+    font-size: 7rem;
+  }
+  &__text {
+    padding-left: 3rem;
+    font-size: 3.125rem;
+  }
+
+  &__list {
+    margin-top: 4.2rem;
+    &--element {
+      font-family: nunito, sans-serif !important;
+    }
+  }
+}
+
+.c-summary__lesson--bg {
+  opacity: 0;
+  filter: blur(0.3125rem);
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.c-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

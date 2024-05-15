@@ -1,15 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodcraft VR</title>
     <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-  </body>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-xl" id="top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/woodcraft_logo.png" class="mt-3 mb-3" alt="logo" height="70">
+            </a>
+            <button class="navbar-toggler c-header__hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#vision">CONTENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#team">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container c-header">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <img src="./img/header__effect.png" class="img-fluid c-header__effect" alt="">
+                <h1 class="mt-5">Become a master of woodwork <br> without a <span class="c-header__orange">single splinter</span></h1>
+                <p>Designed for those in vocational and technical education to learn
+                    through VR, <br> mastering panel saws and milling machines in a safe,
+                    interactive environment.<br>Learn efficiently as you immerse yourself
+                    in realistic scenarios, turning learning into a game-like experience.
+                    Mistakes become valuable lessons without any risk of injury,
+                    fostering skill development effectively.</p>
+                <div class="mt-5">
+                    <a href="https://www.meta.com/en-gb/experiences/6056003204443381/" class="c-header__btn">get woodcraft vr here</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="./img/banner_img_decor.png" class="c-header__img img-fluid" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="c-summary mb-5">
+        <div class="container">
+            <h2 class="pt-5">learning content</h2>
+            <div class="row c-summary__lesson c-summary__lesson--bg mt-5 mb-5">
+                <div class="col-12 col-md-4 c-summary__title pt-3 pb-3">
+                    <h3 class="c-summary__fontsize">01</h3>
+                    <h3 class="c-summary__text">The panel saw</h3>
+                </div>
+                <div class="col-12 col-md-8 mb-5 ">
+                    <ul class="c-summary__list">
+                        <li class="c-summary__list--element">
+                            select personal protective equipment
+                        </li>
+                        <li class="c-summary__list--element">
+                            naming and understanding the components and operation of the machine
+                        </li>
+                        <li class="c-summary__list--element">
+                            selecting the right saw blade based on the material and operation
+                        </li>
+                        <li class="c-summary__list--element">
+                            changing the saw blade correctly
+                        </li>
+                        <li class="c-summary__list--element">
+                            create a saw plan correctly
+                        </li>
+                        <li class="c-summary__list--element">
+                            setting up guides for accurate cutting
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row c-summary__lesson c-summary__lesson--bg mt-5 mb-5 ">
+                <div class="col-12 col-md-4 c-summary__title pt-3 pb-3">
+                    <h3 class="c-summary__fontsize">02</h3>
+                    <h3 class="c-summary__text">The milling
+                        machine</h3>
+                </div>
+                <div class="col-12 col-md-8 mb-5">
+                    <ul class="c-summary__list">
+                        <li class="c-summary__list--element">
+                            select personal protective equipment
+                        </li>
+                        <li class="c-summary__list--element">
+                            naming and understanding the components and operation of the machine
+                        </li>
+                        <li class="c-summary__list--element">
+                            selecting the right saw blade based on the material and operation
+                        </li>
+                        <li class="c-summary__list--element">
+                            selecting the right milling cutter based on the material and operation
+                        </li>
+                        <li class="c-summary__list--element">
+                            change the milling cutter correctly
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

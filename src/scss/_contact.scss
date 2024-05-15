@@ -1,17 +1,30 @@
 .c-contact {
   background-color: $color-white;
   margin-top: -10rem;
+  position: inherit;
   &__paragraph {
+    position: relative;
     background-color: $color-orange;
     padding: 1.5rem;
+    margin-top: -3rem;
     color: $color-white;
+    z-index: 1;
   }
-  &__map {
+  &__icon {
+    position: relative;
+    top: -1.5rem;
+    display: flex;
+    margin-left: 15.8rem;
+    z-index: 2;
+  }
+  &__info {
+    position: relative;
   }
   &__frame {
     height: 250px;
     border-radius: 0.32rem;
     width: 640px;
+    margin-top: -1.5rem;
     @media (max-width: 1400px) {
       width: 555px;
     }

@@ -9,8 +9,17 @@
   color: $color-black;
   font-size: 1.5rem;
   margin: 0.58rem;
+  &:hover {
+    color: $color-orange;
+  }
 }
-
+.nav-link-active {
+  background-color: $color-orange;
+  color: $color-white;
+  &:hover {
+    color: $color-white;
+  }
+}
 .navbar {
   &-nav {
     margin-right: 3rem;

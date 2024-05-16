@@ -31,10 +31,19 @@
   }
   &__img {
     rotate: -8deg;
-    position:relative;
+    position: relative;
     z-index: -2;
   }
+  @media (max-width: 1400px) {
+    position: relative;
+    top: -2rem;
+  }
+
   &__btn {
+    &:hover {
+      background-color: $color-black;
+      transition: 0.3s;
+    }
     background-color: $color-orange;
     padding: 1.5rem;
     padding-left: 3rem;
@@ -44,10 +53,8 @@
     color: $color-white;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: translateY(0.5rem);
-    }
+    transition: 0.3s;
+
     &::before {
       content: ' ';
       position: absolute;
@@ -58,6 +65,10 @@
       height: 100%;
       background-color: $color-light-orange;
       z-index: -1;
+      &:hover {
+        background-color: $color-black;
+        transition: 0.3s;
+      }
       @media (max-width: 576px) {
         left: 2%;
       }

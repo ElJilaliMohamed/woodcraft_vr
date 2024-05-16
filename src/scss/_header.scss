@@ -20,23 +20,112 @@
 .c-header {
   display: flex;
   position: relative;
+  &__text {
+    @media (max-width: 1200px) {
+      position: relative;
+      top: -5rem;
+    }
+    @media (max-width: 992px) {
+      position: relative;
+      top: -3.2rem;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 2rem;
+    }
+  }
   &__orange {
     color: $color-orange;
   }
   &__effect {
     display: flex;
-    position: relative;
-    top: 0.8rem;
-    left: 34rem;
+    position: inherit;
+    padding-top: 3rem;
+    margin-left: 34rem;
+    @media (max-width: 1200px) {
+      margin-left: 27rem;
+    }
+    @media (max-width: 992px) {
+      margin-left: 18rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 27rem;
+      padding-top: 0rem;
+    }
+    @media (max-width: 576px) {
+      height: 2.5rem;
+    }
+    @media (max-width: 521px) {
+      margin-left: 24rem;
+    }
+    @media (max-width: 495px) {
+      margin-left: 16.5rem;
+    }
+
+    @media (max-width: 457px) {
+      height: 1.43rem;
+    }
+
+    @media (max-width: 433px) {
+      height: 2.5rem;
+      margin-left: 15rem;
+    }
+
+    @media (max-width: 360px) {
+      margin-left: 14.2rem;
+      rotate: -6.5deg;
+    }
   }
   &__img {
     rotate: -8deg;
     position: relative;
     z-index: -2;
-  }
-  @media (max-width: 1400px) {
-    position: relative;
-    top: -2rem;
+    @media (max-width: 1400px) {
+      position: relative;
+      top: 8.8rem;
+    }
+    @media (max-width: 1200px) {
+      position: relative;
+      top: 6.5rem;
+      right: 2rem;
+    }
+    @media (max-width: 992px) {
+      position: relative;
+      top: 11rem;
+      max-width: 150%;
+      right: 5rem;
+    }
+    @media (max-width: 990px) {
+      position: relative;
+      top: 15rem;
+      max-width: 130%;
+      right: 7rem;
+    }
+    @media (max-width: 879px) {
+      top: 16rem;
+      max-width: 125%;
+    }
+    @media (max-width: 850px) {
+      position: relative;
+      top: 18.4rem;
+      max-width: 111%;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 6.7rem;
+      max-width: 70%;
+      left: 5rem;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 85%;
+      position: relative;
+      top: 6rem;
+      left: 0rem;
+    }
   }
 
   &__btn {
@@ -54,6 +143,9 @@
     position: relative;
     z-index: 1;
     transition: 0.3s;
+    @media (max-width: 1200px) {
+      padding: 1.2rem;
+    }
 
     &::before {
       content: ' ';

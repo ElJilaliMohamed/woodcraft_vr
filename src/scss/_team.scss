@@ -3,5 +3,43 @@
     position: relative;
     top: -6.7rem;
     padding-right: 3rem;
+    max-width: 100%;
+    @media (max-width: 1400px) {
+      display: flex;
+      max-width: 58%;
+    }
+    @media (max-width: 1200px) {
+      max-width: 50%;
+    }
+    @media (max-width: 1096px) {
+      max-width: 30%;
+    }
+    @media (max-width: 992px) {
+      position: relative;
+      top: 3.5rem;
+      left: 5rem;
+      max-width: 40%;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      position: relative;
+      top: 0rem;
+      max-width: 50%;
+    }
+
+    @media (max-width: 576px) {
+      position: relative;
+      top: 5.5rem;
+      left: 0rem;
+      max-width: 58%;
+      z-index: -1;
+    }
+  }
+  &__logo {
+    max-height: 4rem;
+    @media (max-width: 576px) {
+      margin-top: 2rem;
+    }
   }
 }

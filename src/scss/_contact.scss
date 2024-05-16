@@ -2,29 +2,35 @@
   background-color: $color-white;
   margin-top: -10rem;
   position: inherit;
+  @media (max-width: 768px) {
+    margin-top: -2rem;
+  }
+  @media (max-width: 576px) {
+    margin-top: -8rem;
+  }
+
   &__paragraph {
     position: relative;
     background-color: $color-orange;
     padding: 1.5rem;
-    margin-top: -3rem;
+
     color: $color-white;
     z-index: 1;
   }
   &__icon {
     position: relative;
-    top: -1.5rem;
+    top: -0.8rem;
     display: flex;
-    margin-left: 15.8rem;
     z-index: 2;
+    right: 3rem;
   }
+
   &__info {
     position: relative;
   }
   &__frame {
     height: 250px;
-    border-radius: 0.32rem;
     width: 640px;
-    margin-top: -1.5rem;
     @media (max-width: 1400px) {
       width: 555px;
     }

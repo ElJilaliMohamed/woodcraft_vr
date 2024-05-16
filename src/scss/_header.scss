@@ -20,25 +20,49 @@
 .c-header {
   display: flex;
   position: relative;
+
   &__orange {
     color: $color-orange;
   }
   &__effect {
     display: flex;
-    position: relative;
-    top: 0.8rem;
-    left: 34rem;
+    position: inherit;
+    padding-top: 3rem;
+    margin-left: 34rem;
+    @media (max-width: 1200px) {
+      margin-left: 27rem;
+    }
+    @media (max-width: 768px) {
+      margin-left: 23rem;
+      padding-top: 0rem;
+    }
+    @media (max-width: 576px) {
+      height: 2.5rem;
+    }
+    @media (max-width: 360px) {
+      margin-left: 14.4rem;
+    }
   }
   &__img {
     rotate: -8deg;
     position: relative;
     z-index: -2;
+    @media (max-width: 1400px) {
+      position: relative;
+      top: 6.3rem;
+      right: 1.5rem;
+    }
+    @media (max-width: 1200px) {
+      top: 9rem;
+    }
+    @media (max-width: 768px) {
+      top: 11.5rem;
+    }
   }
   @media (max-width: 1400px) {
     position: relative;
     top: -2rem;
   }
-
   &__btn {
     &:hover {
       background-color: $color-black;
@@ -54,6 +78,9 @@
     position: relative;
     z-index: 1;
     transition: 0.3s;
+    @media (max-width: 1200px) {
+      padding: 1.2rem;
+    }
 
     &::before {
       content: ' ';

@@ -3,5 +3,31 @@
     position: relative;
     top: -6.7rem;
     padding-right: 3rem;
+    max-width: 100%;
+    @media (max-width: 1200px) {
+      display: flex;
+      max-width: 58%;
+    }
+    @media (max-width: 992px) {
+      max-width: 31%;
+    }
+    @media (max-width: 768px) {
+      position: relative;
+      top: -4.4rem;
+      max-width: 33%;
+    }
+
+    @media (max-width: 576px) {
+      position: relative;
+      top: 5.5rem;
+      left: 0rem;
+      max-width: 58%;
+      z-index: -1;
+    }
+  }
+  &__logo {
+    @media (max-width: 576px) {
+      max-height: 4rem;
+    }
   }
 }

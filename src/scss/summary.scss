@@ -1,13 +1,16 @@
 .c-summary {
   background-color: $color-white;
   margin-top: -2rem;
+  @media (max-width: 1200px) {
+    margin-top: 2rem;
+  }
+
   z-index: -1;
   &__lesson {
     position: relative;
     background-color: $color-bg-beige;
     z-index: 0;
     &--bg {
-      position: relative;
       background-repeat: no-repeat;
       background-size: 30%;
       background-position: right;
@@ -35,10 +38,18 @@
   &__fontsize {
     padding-left: 3rem;
     font-size: 7rem;
+    @media (max-width: 768px) {
+      padding-left: 1rem;
+      font-size: 5.5rem;
+    }
   }
   &__text {
     padding-left: 3rem;
     font-size: 3.125rem;
+    @media (max-width: 768px) {
+      padding-top: 1rem;
+      padding-left: 1rem;
+    }
   }
 
   &__list {

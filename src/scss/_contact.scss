@@ -2,8 +2,11 @@
   background-color: $color-white;
   margin-top: -10rem;
   position: inherit;
+  @media (max-width: 1200px) {
+  }
+
   @media (max-width: 768px) {
-    margin-top: -2rem;
+    margin-top: -13rem;
   }
   @media (max-width: 576px) {
     margin-top: -8rem;
